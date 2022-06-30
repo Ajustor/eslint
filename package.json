@@ -1,14 +1,26 @@
 {
   "name": "@ajustor/eslint",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "The rules to be used in projects",
+  "main": ".eslintrc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "release-it": {
+    "git": {
+      "commitMessage": "release v${version}"
+    },
+    "github": {
+      "release": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ajustor/eslint"
+  },
+  "author": "Ajustor",
   "license": "ISC",
-  "devDependencies": {
+  "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.30.0",
     "@typescript-eslint/parser": "^5.30.0",
     "eslint": "^8.18.0"
