@@ -18,5 +18,23 @@ module.exports = {
     quotes: ['error', 'single'],
     complexity: ['error', 5],
     'no-console': 'error',
+    'no-label-var': ['error'],
+    eqeqeq: 'error',
+    'id-denylist': ['data', 'value', 'e', 'cb', 'callback'],
+    'id-length': 'error',
+    'max-classes-per-file': ['error', 1],
+    'no-else-return': ['error', { allowElseIf: false }],
+    curly: 'error',
+    'prefer-template': 'error',
+    'sort-imports': [
+      'error',
+      {
+        ignoreCase: false,
+        ignoreDeclarationSort: false,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+        allowSeparatedGroups: false,
+      },
+    ],
   },
 }
