@@ -20,10 +20,11 @@ module.exports = {
     'no-console': 'error',
     'no-label-var': ['error'],
     eqeqeq: 'error',
-    'id-denylist': ['data', 'value', 'e', 'cb', 'callback'],
+    'id-denylist': ['error', 'data', 'value', 'e', 'cb', 'callback'],
     'id-length': 'error',
     'max-classes-per-file': ['error', 1],
     'no-else-return': ['error', { allowElseIf: false }],
+    '@typescript-eslint/no-explicit-any': 'error',
     curly: 'error',
     'prefer-template': 'error',
     'sort-imports': [
