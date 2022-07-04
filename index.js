@@ -16,9 +16,8 @@ module.exports = {
   },
   plugins: ["@typescript-eslint", "prettier"],
   rules: {
-    "prettier/prettier": "error",
     "sort-keys": ["error", "asc"],
-    indent: ["error", 2],
+    indent: ["error", 2, { ignoredNodes: ["ConditionalExpression"] }],
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "single"],
     complexity: ["error", 5],
