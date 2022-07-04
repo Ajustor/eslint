@@ -14,7 +14,7 @@ module.exports = {
   rules: {
     'sort-keys': ['error', 'asc'],
     indent: [
-      'error',
+      'off',
       2,
       {
         ignoredNodes: ['ConditionalExpression'],
