@@ -10,7 +10,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'babel', '@regru/prefer-early-return'],
+  plugins: ['@typescript-eslint', 'babel'],
   rules: {
     'sort-keys': ['error', 'asc'],
     indent: [
@@ -57,11 +57,5 @@ module.exports = {
       },
     ],
     'object-shorthand': ['error', 'always'],
-    'prefer-early-return': [
-      'error',
-      {
-        maximumStatements: 0,
-      },
-    ],
   },
 }
