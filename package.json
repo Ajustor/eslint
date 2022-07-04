@@ -1,6 +1,6 @@
 {
   "name": "@ajustor/eslint-config",
-  "version": "0.2.0-0",
+  "version": "0.2.0",
   "description": "The rules to be used in projects",
   "main": "index.js",
   "files": [
