@@ -10,7 +10,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'babel'],
+  plugins: ['@typescript-eslint', 'babel', '@regru/prefer-early-return'],
   rules: {
     'sort-keys': ['error', 'asc'],
     indent: [
@@ -33,6 +33,7 @@ module.exports = {
     'max-classes-per-file': ['error', 1],
     'no-else-return': ['error', { allowElseIf: false }],
     '@typescript-eslint/no-explicit-any': 'error',
+    '@typescript-eslint/explicit-function-return-type': ['error'],
     curly: 'error',
     'prefer-template': 'error',
     'sort-imports': [
@@ -43,6 +44,12 @@ module.exports = {
         ignoreMemberSort: false,
         memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
         allowSeparatedGroups: false,
+      },
+    ],
+    'prefer-early-return': [
+      'error',
+      {
+        maximumStatements: 1,
       },
     ],
   },

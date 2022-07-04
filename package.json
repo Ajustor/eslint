@@ -23,12 +23,13 @@
   },
   "author": "Ajustor",
   "license": "ISC",
-  "peerDependencies": {
+  "dependencies": {
+    "@regru/eslint-plugin-prefer-early-return": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^5.30.0",
     "@typescript-eslint/parser": "^5.30.0",
+    "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-babel": "^5.3.1",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint": "^8.18.0"
+    "eslint-plugin-prettier": "^4.2.1"
   }
 }
