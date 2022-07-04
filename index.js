@@ -13,7 +13,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint", "prettier"],
+  plugins: ["@typescript-eslint"],
   rules: {
     "sort-keys": ["error", "asc"],
     indent: ["error", 2, { ignoredNodes: ["ConditionalExpression"] }],
