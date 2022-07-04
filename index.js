@@ -46,10 +46,21 @@ module.exports = {
         allowSeparatedGroups: false,
       },
     ],
+    'prefer-destructuring': [
+      'error',
+      {
+        array: true,
+        object: true,
+      },
+      {
+        enforceForRenamedProperties: false,
+      },
+    ],
+    'object-shorthand': ['error', 'always'],
     'prefer-early-return': [
       'error',
       {
-        maximumStatements: 1,
+        maximumStatements: 0,
       },
     ],
   },
