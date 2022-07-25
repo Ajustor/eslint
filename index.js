@@ -12,7 +12,6 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'babel'],
   rules: {
-    'sort-keys': ['error', 'asc'],
     indent: [
       'off',
       2,
@@ -23,7 +22,7 @@ module.exports = {
       },
     ],
     'linebreak-style': ['error', 'unix'],
-    quotes: ['error', 'single'],
+    quotes: ['error', 'single', { avoidEscape: true }],
     complexity: ['error', 5],
     'no-console': 'error',
     'no-label-var': ['error'],
